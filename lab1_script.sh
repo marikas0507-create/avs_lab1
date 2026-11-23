@@ -86,7 +86,7 @@ echo -e "\nПункт 5:"
 grep -v "Луи" claude_monet/pastry_station/baking_plan | sort -r | head -n 4 | wc -w
 
 echo -e "\nПункт 6:"
-ls -lR | grep "^-" | awk '$2 == 2' | sort -t' ' -k9 -r
+ls -lR | grep "^-[^ ]* 2 " | sort -t' ' -k9 -r
 
 echo -e "\nПункт 7:"
 ls -lR | grep "^l" | sort -t' ' -k9 | tail -n 1
